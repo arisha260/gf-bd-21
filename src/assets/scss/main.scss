@@ -1,0 +1,38 @@
+// базовые подключения
+@use "vars";
+@use "fonts";
+@use "settings";
+@use "components/first-stage";
+@use "components/second-stage";
+@use "components/third-stage";
+
+
+.text{
+    color: #FFF;
+    font-family: var(--font-family);
+    font-size: 64px;
+    user-select: none;
+}
+
+.stage{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.heart-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heart{
+    animation: opacity-0-1 .5s ease, pulse 1s ease-in-out infinite;
+    path{
+        stroke: #ff0000;
+    }
+}
