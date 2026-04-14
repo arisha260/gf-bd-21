@@ -6,7 +6,7 @@ import { Heart2Def } from "./components/icons/Heart2";
 
 export function App() {
 
-  const [clickCount, setClickCount] = useState(45);
+  const [clickCount, setClickCount] = useState(0);
 
   console.log(clickCount)
 
